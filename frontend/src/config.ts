@@ -1,6 +1,6 @@
 // Configuration for different environments
 export const API_BASE_URL = import.meta.env.PROD 
-  ? 'https://your-backend-app.onrender.com' // Replace with your actual Render URL
+  ? 'https://new-yt-backend.onrender.com' // Replace with your actual Render URL
   : 'http://localhost:10000';
 
 export const config = {
