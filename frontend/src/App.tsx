@@ -342,6 +342,19 @@ function App() {
                       <div>
                         <h4 className="font-medium text-red-900">Error</h4>
                         <p className="text-sm text-red-700 mt-1">{taskStatus.error}</p>
+                        {taskStatus.error.includes('cookies') && (
+                          <div className="mt-3 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+                            <p className="text-sm text-yellow-800">
+                              <strong>Tip:</strong> For age-restricted or geo-blocked videos, export cookies from your browser:
+                            </p>
+                            <ol className="text-xs text-yellow-700 mt-2 list-decimal list-inside space-y-1">
+                              <li>Install a browser extension like "Get cookies.txt LOCALLY"</li>
+                              <li>Visit YouTube and log in</li>
+                              <li>Export cookies for youtube.com</li>
+                              <li>Upload the cookies.txt file using the "Advanced Options" above</li>
+                            </ol>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
